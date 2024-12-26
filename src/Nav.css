@@ -1,0 +1,80 @@
+.navbar {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.navbar .navbar-brand {
+    color: #fff !important; 
+}
+
+.navbar .navbar-toggler {
+    border-color: #fff !important; 
+}
+
+.navbar .navbar-toggler-icon {
+    background-color: #fff !important; 
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #007BFF !important;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #ccc; /* Default border color */
+    background-color: #000; /* Black background for the button */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(29, 51, 253, 0.5); /* Subtle shadow */
+}
+
+/* Change the border color to black for LinkedIn and GitHub */
+.social-btn[href*="linkedin"], .social-btn[href*="github"] {
+    border: 1px solid #000 !important; /* Black border */
+}
+
+.social-btn:hover {
+    box-shadow: 0 8px 16px rgba(29, 51, 253, 0.943); /* Stronger shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.dark-icon {
+    color: #fff; /* White icon color */
+    font-size: 1.5rem; /* Icon size */
+}
+
+/* Optional: If you want to change icon color when hovering over the button */
+.social-btn:hover .dark-icon {
+    color: #fff; /* Ensures icon stays white on hover */
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    .social-btn {
+        margin-top: 10px;
+    }
+}

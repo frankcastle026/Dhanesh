@@ -3,7 +3,7 @@ import './Skills.css';
 
 function Skills(){
     return (
-        <div>
+        <div id="skills">
             <div class="skills-container">
     <div class="skill-box">
     <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

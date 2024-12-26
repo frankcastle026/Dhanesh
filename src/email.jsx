@@ -7,6 +7,8 @@ const EmailForm = () => {
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
     const [message,setMessage] = useState('');
+    const [phoneNumber,setPhoneNumber] = useState('');
+    const [subject,setSubject] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,6 +20,8 @@ const EmailForm = () => {
             const templateParams = {
                 from_name:name,
                 from_email:email,
+                from_number:phoneNumber,
+                subject:subject,
                 to_name:'Dhanesh',
                 message:message,
             };
@@ -28,6 +32,8 @@ const EmailForm = () => {
                 setName('');
                 setEmail('');
                 setMessage('');
+                setPhoneNumber('');
+                setSubject('');
             })
             .catch((error) => {
                 console.error('Error sending email:',error);
@@ -35,6 +41,7 @@ const EmailForm = () => {
     }
 
     return (
+        <div id="Contact">
         <form onSubmit={handleSubmit} className="emailForm">
             <input 
             type="text"
@@ -48,6 +55,18 @@ const EmailForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             />
+            <input
+            type="tel"
+            placeholder="Your phone number"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+            />
+            <input 
+            type="text"
+            placeholder="Subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            />
             <textarea
             placeholder="Your Message"
             cols="30"
@@ -56,9 +75,9 @@ const EmailForm = () => {
             onChange={(e) => setMessage(e.target.value)}
             >
             </textarea>
-            <button type="submit">Send Email</button>
+            <button type="submit">Send</button>
         </form>
-    );
+   </div> );
 }
 
 export default EmailForm;

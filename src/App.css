@@ -1,3 +1,13 @@
+/* Apply black background and white text color to the entire body */
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Optional: Set a default font family */
+}
+
+/* Center the content inside #root and apply padding */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,19 +15,23 @@
   text-align: center;
 }
 
+/* Logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Spin animation for the logo */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -27,16 +41,22 @@
   }
 }
 
+/* Animation for logos if prefers-reduced-motion is not active */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
+/* Card styling */
 .card {
   padding: 2em;
+  background-color: #222; /* Slightly darker background for cards */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for better contrast */
 }
 
+/* Specific style for text in the read-the-docs section */
 .read-the-docs {
-  color: #888;
+  color: #888; /* Light gray text color for less emphasis */
 }
