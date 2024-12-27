@@ -1,22 +1,45 @@
+/* Base styles */
 #About {
-    background-color: #000; 
-    color: #fff; 
-    padding: 0; 
-    margin-top: 70px; 
-  }
-  
+  background-color: #000;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  padding: 0;
+  margin-top: 70px;
+}
+
+#about {
+  padding: 5vw; /* Uses relative units for responsive padding */
+  text-align: center;
+}
+
+#about h1 {
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem); /* Dynamic font size for better scaling */
+  margin-bottom: 20px;
+}
+
+#about p {
+  color: grey;
+}
+
+#about .name {
+  font-size: clamp(2rem, 4vw, 3.5rem); /* Dynamic font size for better scaling */
+  text-shadow: 2px 2px 5px rgb(0, 204, 255),
+               -2px -2px 5px rgb(0, 204, 255),
+               2px -2px 5px rgb(0, 204, 255),
+               -2px 2px 5px rgb(0, 204, 255);
+  color: #000000;
+}
+
+/* Responsive adjustments for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
   #about {
-    padding: 50px; 
-    text-align: center; 
+    padding: 4vw; /* Slightly reduced padding */
   }
-  
-  #about h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+}
+
+/* Responsive adjustments for screens smaller than 480px (small phones) */
+@media (max-width: 480px) {
+  #about {
+    padding: 3vw; /* Even smaller padding */
   }
-  
-  #about .display-3 {
-    font-size: 3rem; 
-    color: #fff; 
-  }
-  
+}

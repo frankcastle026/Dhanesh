@@ -1,10 +1,15 @@
 import React from 'react';
 import './Skills.css';
+import { DiPython } from "react-icons/di";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 
 function Skills(){
     return (
         <div id="skills">
+          <h3 class="skills-header">S K I L L S</h3>
             <div class="skills-container">
+              
     <div class="skill-box">
     <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <g fill="#00D8FF" fill-rule="evenodd">
@@ -165,7 +170,7 @@ function Skills(){
       <div class="skill-name">PostgreSQL</div>
     </div>
     <div class="skill-box">
-      <svg width="800px" height="800px" viewBox="0 0 538.584 538.584" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h538.584v538.583H0V0z" fill="none"/><path d="M405.5 467.454L269.29 504.13l-136.212-36.676-31.432-340.525h335.29L405.5 467.454z" fill="#2062af"/><path d="M269.289 154.511v320.367l.308.084 110.229-29.682 25.443-290.769h-135.98z" fill="#3c9cd7"/><path d="M191.985 76.899V56.631h29.571V34.453h-51.749v62.684h51.749V76.899h-29.571zm82.766-20.268h20.674V34.453h-51.754v22.178c6.924 6.924 10.535 10.238 20.549 20.252-5.854 0-20.549.021-20.549.02v20.234h51.754V76.899l-20.674-20.268zm73.352 0h20.673V34.453H317.02v22.178c6.924 6.924 10.537 10.238 20.551 20.252-5.852 0-20.551.021-20.551.02v20.234h51.757V76.899l-20.674-20.268z"/><path d="M269.168 239.656l-97.49 40.602 3.233 40.199 94.257-40.301 100.265-42.868 4.157-41.122-104.422 43.49z" fill="#ffffff"/><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-825.508" y1="1338.301" x2="-825.508" y2="1419.102" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset=".387" stop-color="#d1d3d4" stop-opacity="0"/><stop offset="1" stop-color="#d1d3d4"/></linearGradient><path d="M171.677 280.258l3.233 40.199 94.257-40.301v-40.5l-97.49 40.602z" fill="url(#a)"/><linearGradient id="b" gradientUnits="userSpaceOnUse" x1="-724.552" y1="1378.602" x2="-724.552" y2="1462.591" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset=".387" stop-color="#d1d3d4" stop-opacity="0"/><stop offset="1" stop-color="#d1d3d4"/></linearGradient><path d="M373.59 196.167l-104.422 43.489v40.5l100.265-42.868 4.157-41.121z" fill="url(#b)"/><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="-874.103" y1="1302.263" x2="-680.039" y2="1302.263" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset="0" stop-color="#e8e7e5"/><stop offset="1" stop-color="#ffffff"/></linearGradient><path d="M171.827 280.258l3.234 40.199 144.625.461-3.235 53.598-47.59 13.398-45.748-11.551-2.772-33.268h-42.508l5.545 64.225 85.945 25.412 85.479-24.951 11.09-127.523H171.827z" fill="url(#c)"/><path d="M269.168 280.258h-97.49l3.233 40.199 94.257.301v-40.5zm0 107.528l-.462.129-45.742-11.551-2.772-33.268h-42.507l5.544 64.225 85.939 25.412v-44.947z" opacity=".05"/><linearGradient id="d" gradientUnits="userSpaceOnUse" x1="-883.032" y1="1442.031" x2="-672.341" y2="1442.031" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset="0" stop-color="#e8e7e5"/><stop offset="1" stop-color="#ffffff"/></linearGradient><path d="M162.898 196.167H373.59l-4.157 41.122H167.98l-5.082-41.122z" fill="url(#d)"/><path d="M269.168 196.167h-106.27l5.082 41.122h101.188v-41.122z" opacity=".05"/></svg>
+    <FaCss3Alt />
       <div class="skill-name">CSS</div>
     </div>
     <div class="skill-box">
@@ -177,15 +182,11 @@ function Skills(){
       <div class="skill-name">JavaScript</div>
     </div>
     <div class="skill-box">
-    <svg width="800px" height="800px" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.885 16c-8.124 0-7.617 3.523-7.617 3.523l.01 3.65h7.752v1.095H21.197S16 23.678 16 31.876c0 8.196 4.537 7.906 4.537 7.906h2.708v-3.804s-.146-4.537 4.465-4.537h7.688s4.32.07 4.32-4.175v-7.019S40.374 16 31.885 16zm-4.275 2.454c.771 0 1.395.624 1.395 1.395s-.624 1.395-1.395 1.395a1.393 1.393 0 0 1-1.395-1.395c0-.771.624-1.395 1.395-1.395z" fill="url(#a)"/><path d="M32.115 47.833c8.124 0 7.617-3.523 7.617-3.523l-.01-3.65H31.97v-1.095h10.832S48 40.155 48 31.958c0-8.197-4.537-7.906-4.537-7.906h-2.708v3.803s.146 4.537-4.465 4.537h-7.688s-4.32-.07-4.32 4.175v7.019s-.656 4.247 7.833 4.247zm4.275-2.454a1.393 1.393 0 0 1-1.395-1.395c0-.77.624-1.394 1.395-1.394s1.395.623 1.395 1.394c0 .772-.624 1.395-1.395 1.395z" fill="url(#b)"/></svg>
+    <DiPython />
       <div class="skill-name">Python</div>
     </div>
     <div class="skill-box">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
-  <rect width="256" height="256" fill="#007ACC" />
-  <path d="M50 99.54v19.12h39.72v106.54h23.68V118.66H153.1V99.54H50z" fill="#FFF"/>
-  <path d="M196.42 100.22c-5.54.96-10.74 2.92-15.5 5.78-3.48 2.14-8.42 6.32-8.42 6.94 0 .22 2.96 2.02 6.48 3.98 9.02 4.9 13.54 8.54 17.1 13.34 2.96 4.08 4.26 8.16 4.26 13.8 0 6.48-2.06 11.36-6.7 16.1-4.06 4.3-8.64 6.74-15.92 8.46-3.84.88-13.54.88-17.38 0-6.8-1.72-12.86-5.28-18.02-10.64-2.8-2.88-7.98-10.1-7.98-10.54 0-.24 3.38-2.06 7.48-4.02l7.5-3.58 2.4 3.6c1.32 2 3.9 5.12 5.76 6.96 2.64 2.6 4.5 3.66 7.74 4.34 3.98.88 9.32.4 12.6-1.2 2.02-.96 4.52-3.78 4.52-5.22 0-.22-1.1-1.5-2.46-2.82-2.26-2.26-5.06-3.86-15.94-9.14-11.8-5.96-16.14-9.14-20.2-14.44-5.4-6.7-7.2-18.5-4.16-26.34 2.14-5.26 6.7-10.24 12.4-13.34 8.52-4.58 22.86-5.7 33.44-2.52 9.1 2.72 18.04 9.88 22.1 17.66 1.58 2.96 4.34 8.96 4.34 9.98 0 .36-3.34 2.26-7.4 4.22-4.06 2.02-7.8 3.7-8.32 3.7-.5 0-1.9-2.4-3.18-5.36-1.72-3.92-3.78-6.42-7.58-8.6-4.7-2.6-12.88-2.44-17.92.36-2.94 1.66-5.68 5.34-6.34 8.32-.6 2.88-.3 4.38 1.48 7 1.96 2.94 5.16 4.9 19.58 11.54 14.06 6.34 19.3 9.46 24.04 14.78 7.1 7.56 8.9 19.14 4.6 29.04-4.7 10.4-15.66 17.18-29.04 18.58-5.98.66-18.66-.3-24.28-1.84z" fill="#FFF"/>
-</svg>
+    <SiTypescript />
 
       <div class="skill-name">TypeScript</div>
     </div>

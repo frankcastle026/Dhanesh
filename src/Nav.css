@@ -24,12 +24,12 @@
 }
 
 .navbar .nav-link:hover {
-    color: #007BFF !important;
+    color: #00e5ff !important;
 }
 
 .social-btn {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +45,10 @@
 .social-btn:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.9); /* Stronger shadow */
     transform: translateY(-2px); /* Slight lift effect */
+}
+
+.social-btn i {
+    font-size: 1rem;
 }
 
 /* Ensure the social buttons are aligned correctly to the right */

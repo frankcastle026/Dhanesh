@@ -1,16 +1,34 @@
-.emailForm {
-  max-width: 600px;
-  margin: 20px auto; /* Reduce the top margin to align with the adjusted paragraph */
-  padding: 30px;
-  background-color: #000; /* Set form background to black */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Lighter shadow to contrast with black background */
+#Contact {
+  max-width: 800px;
+  margin: 50px auto; /* Center alignment */
+  padding: 20px;
+  background-color: #000; /* Dark background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  text-align: center;
 }
 
-.emailForm h2 {
-  text-align: center;
+#Contact h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem); /* Responsive font size */
+  font-weight: 700;
+  color: #fff;
   margin-bottom: 20px;
-  color: #fff; /* Set text color to white */
+  letter-spacing: 1.5px;
+}
+
+#Contact p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive text size */
+  color: #00f0f8;
+  margin: 10px 0 20px 0;
+}
+
+.emailForm {
+  max-width: 600px;
+  margin: 0 auto; /* Center align */
+  padding: 20px;
+  background-color: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 .emailForm input,
@@ -18,31 +36,29 @@
   width: 100%;
   padding: 12px;
   margin: 10px 0;
-  border: 1px solid #444; /* Darker border for contrast */
+  border: 1px solid #444;
   border-radius: 4px;
-  font-size: 16px;
-  background-color: #222; /* Dark background for inputs */
-  color: #fff; /* White text color inside input and textarea */
+  font-size: clamp(1rem, 2.5vw, 1.1rem); /* Responsive input font size */
+  background-color: #222;
+  color: #fff;
   transition: border-color 0.3s ease;
-}
-
-.emailForm input::placeholder,
-.emailForm textarea::placeholder {
-  color: #888; /* Placeholder text color in a soft gray */
+  box-shadow: 0 4px 8px rgb(0, 208, 255);
 }
 
 .emailForm input:focus,
 .emailForm textarea:focus {
-  border-color: #007BFF;
   outline: none;
+  border-color: #00eeff;
+  background-color: #333;
+  box-shadow: 0 4px 8px rgb(0, 251, 255);
 }
 
 .emailForm button {
   width: 100%;
   padding: 12px;
   background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  font-size: 18px;
+  color: #000;
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive button font size */
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -53,37 +69,45 @@
   background-color: #8f99a3;
 }
 
-.emailForm .error {
-  color: red;
-  font-size: 14px;
-  margin-top: 10px;
-  text-align: center;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #Contact {
+    padding: 20px;
+  }
+
+  #Contact h2 {
+    font-size: 2rem;
+  }
+
+  #Contact p {
+    font-size: 1rem;
+  }
+
+  .emailForm {
+    padding: 15px;
+  }
+
+  .emailForm button {
+    padding: 10px;
+    font-size: 1rem;
+  }
 }
 
-#Contact {
-  max-width: 800px;
-  margin: 100px auto; /* Center alignment with space above */
-  padding: 50px;
-  background-color: #000; /* Dark background to match the email form */
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Consistent light shadow */
-  text-align: center;
-}
+@media (max-width: 480px) {
+  #Contact {
+    padding: 10px;
+  }
 
-#Contact h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff; /* White text for contrast */
-  margin: 0;
-  letter-spacing: 1.5px;
-  line-height: 1.4;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle depth */
-  margin-bottom: 20px; /* Space below the heading */
-}
+  #Contact h2 {
+    font-size: 1.8rem;
+  }
 
-#Contact p {
-  font-size: 1rem;
-  color: #888; /* Light gray for any supporting text */
-  margin-top: 10px;
-  margin-bottom: 5px;
+  .emailForm {
+    padding: 10px;
+  }
+
+  .emailForm button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
 }

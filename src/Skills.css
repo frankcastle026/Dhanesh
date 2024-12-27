@@ -1,13 +1,26 @@
-/* Center the skills container */
+#skills {
+  background-color: #000;
+  text-align: center; /* Center the content */
+  padding: 20px; /* Add some padding */
+}
+
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 10px; /* Reduced gap between boxes */
+  background-color: #000;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns for larger screens */
+  gap: 15px; /* Gap between boxes */
   max-width: 800px;
   padding: 20px;
   margin: 0 auto; /* Center horizontally */
   justify-items: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
+}
+
+.skills-header {
+  font-size: clamp(1.5rem, 2.5vw, 2em); /* Responsive font size */
+  background-color: #000;
+  margin-bottom: 20px; /* Space between header and skill box */
+  color: #fff;
 }
 
 /* Skill box styling */
@@ -17,32 +30,74 @@
   border-radius: 8px;
   padding: 15px; /* Reduced padding for a smaller box */
   text-align: center;
-  box-shadow: 0 4px 6px rgba(225, 225, 230, 0.5);
+  box-shadow: 0 4px 6px rgb(3, 255, 255);
   transition: transform 0.2s, box-shadow 0.2s;
   color: #fff;
-  
+
   /* Ensure each box maintains the same shape */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150px; /* Reduced height */
-  width: 150px; /* Reduced width */
+  height: 150px;
+  width: 150px;
 }
 
 .skill-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.943);
+  box-shadow: 0 8px 16px rgba(0, 225, 255, 0.943);
 }
 
 .skill-box svg {
-  width: 40px;  /* Reduced size of SVG icons */
+  width: 40px; /* Reduced size of SVG icons */
   height: 40px;
   margin-bottom: 10px;
 }
 
 .skill-name {
-  font-size: 14px; /* Adjusted font size for smaller boxes */
+  font-size: clamp(0.9rem, 2vw, 1rem); /* Adjusted font size for responsiveness */
   font-weight: bold;
   color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For medium screens (tablets and smaller laptops) */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Reduced gap for smaller screens */
+  }
+
+  .skill-box {
+    height: 120px; /* Adjust box size */
+    width: 120px;
+  }
+
+  .skill-box svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* For small screens (mobile devices) */
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* 1 column */
+    gap: 15px; /* Maintain gap for better spacing */
+  }
+
+  .skill-box {
+    height: 100px; /* Adjust box size */
+    width: 100px;
+  }
+
+  .skill-box svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .skill-name {
+    font-size: 0.8rem; /* Smaller font for skill names */
+  }
 }

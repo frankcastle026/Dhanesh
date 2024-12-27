@@ -1,96 +1,107 @@
+#projects {
+  background-color: #000;
+}
+
 .projects-container {
-  padding: 20px;
+  padding: 5vw;
   background-color: #000000;
+  text-align: center; /* Center the header */
 }
 
 .projects-header {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: clamp(1.8rem, 2.5vw, 2rem);
+  margin-bottom: 30px; /* Add space between header and cards */
   color: #fefafa;
-  text-align: center;
 }
 
+/* Layout for cards */
+.projects-cards {
+  display: flex;
+  flex-wrap: wrap; /* Ensure cards wrap in rows */
+  justify-content: center; /* Center-align cards */
+  gap: 20px; /* Space between cards */
+}
+
+/* Individual card styles */
 .card {
-  position: relative;
-  width: 18rem;
+  width: 100%;
+  max-width: 300px;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(225, 225, 230, 0.5);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.943);
   transition: transform 0.2s, box-shadow 0.2s;
+  margin: 0 auto; /* Center each card */
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.943);
-}
-
-.card-img-top {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
-  padding: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.card-body {
-  padding: 1rem;
-  color: white;
-  background-color: #333;
-  text-align: left;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  color: white;
-}
-
-.card-text {
-  font-size: 1rem;
-  color: white;
+  box-shadow: 0 16px 32px rgba(255, 255, 255, 0.943);
 }
 
 .card-img-container {
   position: relative;
+  height: 60%;
+  overflow: hidden;
 }
 
-.social-btn2 {
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.card-title {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  margin: 0;
+}
+
+/* Social button styles */
+.for-projects {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #333;
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
   color: white;
-  border-radius: 50%; 
-  padding: 10px;
-  font-size: 24px;
-  width: 40px;         
-  height: 40px;        
-  display: flex;       
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.2s ease;
-  z-index: 10;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* On hover, the icon becomes visible and is centered */
-.card:hover .social-btn2 {
-  opacity: 1;
-  transform: translateY(-2px); /* Slight lift effect on hover */
+.card:hover .for-projects {
+  display: flex;
+  transform: scale(1.1);
 }
 
-.card:hover .social-btn2:hover {
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.9); /* Stronger hover effect */
+.for-projects:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgb(0, 255, 238);
 }
 
-/* Optional: If you want the icons inside the button to remain white even on hover */
-.social-btn2 i {
-  color: #ffffff;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    max-width: 250px;
+  }
 }
 
-/* Add hover effect on the social button to add a slight shadow */
-.social-btn2:hover {
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.9); /* Stronger shadow */
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .projects-header {
+    font-size: 1.5rem;
+  }
 }

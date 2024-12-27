@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nav.css'; 
-
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Nav() {
   return (
