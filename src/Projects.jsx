@@ -1,18 +1,46 @@
 import React from 'react';
+import './Projects.css';
 
-function Project(){
-    return (
-        <div>
-            <div class="card text-bg-dark">
-                <img src="./Notes.jpg" height="100px" width="200px" class="card-img" alt="..." />
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                    </div>
-            </div>
+function Project() {
+  return (
+    <div className="projects-container">
+      <h3 className="projects-header">PROJECTS</h3> 
+      <div className="d-flex flex-wrap gap-3 justify-content-between">
+        <div className="card" style={{ width: '18rem' }}>
+          <div className="card-img-container">
+            <img src="./Notes.jpg" className="card-img-top" alt="Personalised Notes Blog" />
+            <a
+              href="https://github.com/frankcastle026/Personalised_notes_blog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn2"
+            >
+              <i className="bi bi-github"></i>
+            </a>
+          </div>
+          <div className="card-body">
+            <h5 className="card-title">Personalised Notes Blog</h5>
+          </div>
         </div>
-    );
+        <div className="card" style={{ width: '18rem' }}>
+          <div className="card-img-container">
+            <img src="./ECommerce.png" className="card-img-top" alt="E-Commerce Website" />
+            <a
+              href="https://github.com/frankcastle026/E-Commerce"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn2"
+            >
+              <i className="bi bi-github"></i>
+            </a>
+          </div>
+          <div className="card-body">
+            <h5 className="card-title">E-Commerce Website</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Project;

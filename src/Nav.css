@@ -33,32 +33,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    border: 1px solid #ccc; /* Default border color */
-    background-color: #000; /* Black background for the button */
+    border-radius: 50%; /* Circle shape */
+    background-color: #000; /* Black background */
+    color: white; /* White icon color */
+    font-size: 1.5rem; /* Icon size */
     transition: box-shadow 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(29, 51, 253, 0.5); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(225, 225, 230, 0.5); /* Subtle shadow */
 }
 
-/* Change the border color to black for LinkedIn and GitHub */
-.social-btn[href*="linkedin"], .social-btn[href*="github"] {
-    border: 1px solid #000 !important; /* Black border */
-}
-
+/* Social button hover effect */
 .social-btn:hover {
-    box-shadow: 0 8px 16px rgba(29, 51, 253, 0.943); /* Stronger shadow on hover */
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.9); /* Stronger shadow */
     transform: translateY(-2px); /* Slight lift effect */
 }
 
-.dark-icon {
-    color: #fff; /* White icon color */
-    font-size: 1.5rem; /* Icon size */
+/* Ensure the social buttons are aligned correctly to the right */
+.navbar .ms-auto {
+    margin-left: auto;
 }
 
-/* Optional: If you want to change icon color when hovering over the button */
-.social-btn:hover .dark-icon {
-    color: #fff; /* Ensures icon stays white on hover */
+/* Optional: Adjust icon color if needed */
+.social-btn:hover i {
+    color: #fff; /* Keeps icon white on hover */
 }
+
 
 .fixed-top {
     position: fixed;

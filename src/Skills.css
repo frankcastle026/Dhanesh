@@ -1,36 +1,48 @@
+/* Center the skills container */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px; /* Reduced gap between boxes */
   max-width: 800px;
   padding: 20px;
+  margin: 0 auto; /* Center horizontally */
+  justify-items: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
+/* Skill box styling */
 .skill-box {
-  background: #000; 
-  border: 1px solid #000; 
+  background: #000;
+  border: 1px solid #000;
   border-radius: 8px;
-  padding: 20px;
+  padding: 15px; /* Reduced padding for a smaller box */
   text-align: center;
-  box-shadow: 0 4px 6px rgba(29, 51, 253, 0.5);
+  box-shadow: 0 4px 6px rgba(225, 225, 230, 0.5);
   transition: transform 0.2s, box-shadow 0.2s;
   color: #fff;
+  
+  /* Ensure each box maintains the same shape */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Reduced height */
+  width: 150px; /* Reduced width */
 }
 
 .skill-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(29, 51, 253, 0.943); 
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.943);
 }
 
 .skill-box svg {
-  width: 50px;
-  height: 50px;
+  width: 40px;  /* Reduced size of SVG icons */
+  height: 40px;
   margin-bottom: 10px;
 }
 
 .skill-name {
-  font-size: 16px;
+  font-size: 14px; /* Adjusted font size for smaller boxes */
   font-weight: bold;
-  color: #fff; 
+  color: #fff;
 }
-

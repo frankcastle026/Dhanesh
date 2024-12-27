@@ -1,6 +1,5 @@
 import React from 'react';
 import './Nav.css'; 
-import 'bootstrap-icons/font/bootstrap-icons.css'; 
 
 
 function Nav() {
@@ -47,14 +46,14 @@ function Nav() {
                 Contact
               </a>
             </div>
-            <div className="d-flex ms-auto align-items-center">
+            <div className="ms-auto d-flex align-items-center">
               <a
                 href="https://www.linkedin.com/in/dhanesh-n-75ba50267/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-btn me-2"
               >
-                <i className="bi bi-linkedin "></i>
+                <i className="bi bi-linkedin"></i>
               </a>
               <a
                 href="https://github.com/frankcastle026"
@@ -62,7 +61,7 @@ function Nav() {
                 rel="noopener noreferrer"
                 className="social-btn"
               >
-                <i className="bi bi-github "></i>
+                <i className="bi bi-github"></i>
               </a>
             </div>
           </div>

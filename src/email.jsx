@@ -42,6 +42,9 @@ const EmailForm = () => {
 
     return (
         <div id="Contact">
+    <h2>Where Creativity Meets Functionality—Let’s Collaborate!</h2>
+    <p>Have a project in mind? Let’s connect and bring your vision to life!</p>
+
         <form onSubmit={handleSubmit} className="emailForm">
             <input 
             type="text"

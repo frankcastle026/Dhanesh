@@ -5,6 +5,7 @@ import About from './About.jsx';
 import './App.css';
 import Project from './Projects.jsx';
 import Skills from './Skills.jsx';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Nav />
       <About />
       <Skills />
+      <Project />
       <EmailForm />
       
     </div>

@@ -1,0 +1,96 @@
+.projects-container {
+  padding: 20px;
+  background-color: #000000;
+}
+
+.projects-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fefafa;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  width: 18rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(225, 225, 230, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.943);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card-body {
+  padding: 1rem;
+  color: white;
+  background-color: #333;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: white;
+}
+
+.card-img-container {
+  position: relative;
+}
+
+.social-btn2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%; 
+  padding: 10px;
+  font-size: 24px;
+  width: 40px;         
+  height: 40px;        
+  display: flex;       
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+/* On hover, the icon becomes visible and is centered */
+.card:hover .social-btn2 {
+  opacity: 1;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.card:hover .social-btn2:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.9); /* Stronger hover effect */
+}
+
+/* Optional: If you want the icons inside the button to remain white even on hover */
+.social-btn2 i {
+  color: #ffffff;
+}
+
+/* Add hover effect on the social button to add a slight shadow */
+.social-btn2:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.9); /* Stronger shadow */
+}
