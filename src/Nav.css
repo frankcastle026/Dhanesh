@@ -8,12 +8,28 @@
 }
 
 .navbar .navbar-toggler {
-    border-color: #fff !important; 
+    border-radius: 50%; /* Make the button circular */
+    border: 2px solid #ffffff; /* Define a border for better visibility */
+    padding: 8px; /* Adjust padding to keep the button's size appropriate */
+    background-color: #ffffff; /* Add a background color */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Add a shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar .navbar-toggler:hover {
+    box-shadow: 0 8px 16px rgb(0, 255, 255); /* Enhance shadow on hover */
+    background-color: #ffffff; /* Darken background color on hover */
+}
+
+.navbar .navbar-toggler:focus {
+    outline: none; /* Remove the focus outline */
 }
 
 .navbar .navbar-toggler-icon {
-    background-color: #fff !important; 
+    border-radius: 50%; /* Ensure the icon fits the circular shape */
+    background-color: #fff !important; /* Maintain a visible icon */
 }
+
 
 .navbar .nav-link {
     color: #fff !important;
@@ -80,3 +96,48 @@
         margin-top: 10px;
     }
 }
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1050;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+  
+  .sidebar .social-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+    justify-content: center; /* Optional: Center align the buttons */
+    align-items: center; /* Align buttons vertically */
+  }
+  
+  .social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem; /* Adjust size of the icons */
+    color: inherit;
+  }
+  
