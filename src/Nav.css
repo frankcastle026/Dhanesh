@@ -54,7 +54,7 @@
     color: white; /* White icon color */
     font-size: 1.5rem; /* Icon size */
     transition: box-shadow 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(225, 225, 230, 0.5); /* Subtle shadow */
+    box-shadow: 0 8px 16px rgba(241, 241, 245, 0.5); /* Subtle shadow */
 }
 
 /* Social button hover effect */
