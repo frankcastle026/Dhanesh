@@ -13,33 +13,76 @@
 }
 
 #about h1 {
-  font-size: clamp(1.8rem, 2.5vw, 2.5rem); /* Dynamic font size for better scaling */
-  margin-bottom: 20px;
+  font-size: 4rem; /* Unified font size for headings */
+  font-weight: bold;
+  margin-bottom: 100px; /* Ensure spacing below the heading */
+}
+
+#about .name {
+  font-size: 4rem; /* Dynamic font size for better scaling */
+  font-weight: bold;
+  color: #00ddff;
+  margin-bottom: 50px; /* Adjusted spacing for better layout */
 }
 
 #about p {
   color: grey;
+  line-height: 1.6; /* Added line height for better readability */
 }
 
-#about .name {
-  font-size: clamp(2rem, 4vw, 3.5rem); /* Dynamic font size for better scaling */
-  text-shadow: 2px 2px 5px rgb(0, 204, 255),
-               -2px -2px 5px rgb(0, 204, 255),
-               2px -2px 5px rgb(0, 204, 255),
-               -2px 2px 5px rgb(0, 204, 255);
-  color: #000000;
+#about .name > div {
+  margin-top: 30px;
+}
+
+.aboutme {
+  display: block;
+  margin-top: 30px; /* Adjusted spacing for separation */
+  font-weight: bold; /* Updated for emphasis */
+  text-align: center; /* Center-align ABOUT ME */
+}
+
+.para {
+  clear: both; /* Ensure content clears floated elements */
+  text-align: justify; /* Optional: Make paragraphs justified */
+  margin-top: 20px; /* Add spacing between ABOUT ME and paragraphs */
+}
+
+.para p {
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+  color: grey;
+  line-height: 1.6; /* Improved paragraph readability */
 }
 
 /* Responsive adjustments for screens smaller than 768px (tablets and phones) */
 @media (max-width: 768px) {
   #about {
-    padding: 4vw; /* Slightly reduced padding */
+    padding: 4vw; /* Slightly reduced padding for smaller screens */
+  }
+
+  #about h1 {
+    font-size: 3rem; /* Adjusted font size for smaller screens */
+  }
+
+  .name {
+    font-size: 3rem; /* Adjusted dynamic font size */
   }
 }
 
 /* Responsive adjustments for screens smaller than 480px (small phones) */
 @media (max-width: 480px) {
   #about {
-    padding: 3vw; /* Even smaller padding */
+    padding: 3vw; /* Further reduced padding */
+  }
+
+  #about h1 {
+    font-size: 1.5rem; /* Smaller font for small devices */
+  }
+
+  #about .name {
+    font-size: 1.8rem; /* Adjusted dynamic font size */
+  }
+
+  .aboutme {
+    margin-top: 15px; /* Reduced spacing for compact layout */
   }
 }
