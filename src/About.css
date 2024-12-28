@@ -75,14 +75,18 @@
   }
 
   #about h1 {
-    font-size: 1.5rem; /* Smaller font for small devices */
+    font-size: 2rem;
   }
 
   #about .name {
-    font-size: 1.8rem; /* Adjusted dynamic font size */
+    font-size: 2rem; /* Adjusted dynamic font size */
   }
 
   .aboutme {
-    margin-top: 15px; /* Reduced spacing for compact layout */
+    margin-top: 300px; /* Reduced spacing for compact layout */
+  }
+
+  .name {
+    margin-bottom: 200px; /* Increased margin for large gap */
   }
 }

@@ -7,7 +7,7 @@ function About() {
       <section id="about" style={{ padding: '50px', textAlign: 'center' }}>
         <h1>
           Hi! I'm <span className="name">Dhanesh</span> <br />
-          <div>A Full Stack Web Developer</div>
+          <div class="Developer">A Full Stack Web Developer</div>
         </h1>
         <div className="aboutme">
           <h5 className="h3header">ABOUT ME</h5>
