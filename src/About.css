@@ -1,92 +1,99 @@
 /* Base styles */
-#About {
+#about-section {
   background-color: #000;
   color: #ffffff;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  padding: 0;
+  padding: 5vw;
   margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Ensures full viewport height */
+  box-sizing: border-box;
 }
 
-#about {
-  padding: 5vw; /* Uses relative units for responsive padding */
-  text-align: center;
-}
-
-#about h1 {
-  font-size: 4rem; /* Unified font size for headings */
+#about-section h1 {
+  font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 100px; /* Ensure spacing below the heading */
+  margin-bottom: 2rem; /* Reduced spacing */
+  text-align: center; /* Center-align text */
 }
 
-#about .name {
-  font-size: 4rem; /* Dynamic font size for better scaling */
+#about-section .name {
+  font-size: 4rem;
   font-weight: bold;
   color: #00ddff;
-  margin-bottom: 50px; /* Adjusted spacing for better layout */
 }
 
-#about p {
-  color: grey;
-  line-height: 1.6; /* Added line height for better readability */
-}
-
-#about .name > div {
-  margin-top: 30px;
+#about-section .developer {
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 .aboutme {
-  display: block;
-  margin-top: 30px; /* Adjusted spacing for separation */
-  font-weight: bold; /* Updated for emphasis */
-  text-align: center; /* Center-align ABOUT ME */
+  margin-top: 10rem; /* Huge gap added here */
+  font-weight: bold;
+  text-align: center;
 }
 
 .para {
-  clear: both; /* Ensure content clears floated elements */
-  text-align: justify; /* Optional: Make paragraphs justified */
-  margin-top: 20px; /* Add spacing between ABOUT ME and paragraphs */
+  max-width: 800px; /* Limits text width for readability */
+  text-align: justify;
+  margin-top: 2rem;
 }
 
 .para p {
-  margin-bottom: 15px; /* Add spacing between paragraphs */
+  margin-bottom: 1rem;
   color: grey;
-  line-height: 1.6; /* Improved paragraph readability */
+  line-height: 1.6;
 }
 
 /* Responsive adjustments for screens smaller than 768px (tablets and phones) */
 @media (max-width: 768px) {
-  #about {
-    padding: 4vw; /* Slightly reduced padding for smaller screens */
+  #about-section {
+    padding: 4vw;
   }
 
-  #about h1 {
-    font-size: 3rem; /* Adjusted font size for smaller screens */
+  #about-section h1 {
+    font-size: 3rem;
   }
 
-  .name {
-    font-size: 3rem; /* Adjusted dynamic font size */
+  #about-section .name {
+    font-size: 3rem;
+  }
+
+  #about-section .developer {
+    font-size: 2.5rem;
+  }
+
+  .aboutme {
+    margin-top: 6rem; /* Adjust gap for smaller screens */
   }
 }
 
 /* Responsive adjustments for screens smaller than 480px (small phones) */
 @media (max-width: 480px) {
-  #about {
-    padding: 3vw; /* Further reduced padding */
+  #about-section {
+    padding: 3vw;
   }
 
-  #about h1 {
-    font-size: 2rem;
+  #about-section h1 {
+    font-size: 2.5rem;
   }
 
-  #about .name {
-    font-size: 2rem; /* Adjusted dynamic font size */
+  #about-section .name {
+    font-size: 2.5rem;
+  }
+
+  #about-section .developer {
+    font-size: 1.2rem;
   }
 
   .aboutme {
-    margin-top: 300px; /* Reduced spacing for compact layout */
+    margin-top: 4rem; /* Reduced gap for compact layout */
   }
 
-  .name {
-    margin-bottom: 200px; /* Increased margin for large gap */
+  .para {
+    margin-top: 1.5rem;
   }
 }
