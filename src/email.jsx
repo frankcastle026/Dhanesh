@@ -9,6 +9,7 @@ const EmailForm = () => {
     const [message,setMessage] = useState('');
     const [phoneNumber,setPhoneNumber] = useState('');
     const [subject,setSubject] = useState('');
+    const [successMessage, setSuccessMessage] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -34,6 +35,8 @@ const EmailForm = () => {
                 setMessage('');
                 setPhoneNumber('');
                 setSubject('');
+                setSuccessMessage(true);
+                setTimeout(() => setSuccessMessage(false), 5000);
             })
             .catch((error) => {
                 console.error('Error sending email:',error);
@@ -45,30 +48,40 @@ const EmailForm = () => {
     <h2>Where Creativity Meets Functionality—Let’s Collaborate!</h2>
     <p>Have a project in mind? Let’s connect and bring your vision to life!</p>
 
+    {successMessage && (
+          <div class="notification">
+          Mail Sent Successfully!
+        </div>
+        )}
+
         <form onSubmit={handleSubmit} className="emailForm">
             <input 
             type="text"
             placeholder="Your Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
             />
             <input 
             type="email"
             placeholder="Your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
             />
             <input
             type="tel"
             placeholder="Your phone number"
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
+            required
             />
             <input 
             type="text"
             placeholder="Subject"
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
+            required
             />
             <textarea
             placeholder="Your Message"
@@ -76,6 +89,7 @@ const EmailForm = () => {
             rows="10"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            required
             >
             </textarea>
             <button type="submit">Send</button>

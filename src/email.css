@@ -69,6 +69,15 @@
   background-color: #8f99a3;
 }
 
+.notification {
+  margin-bottom: 1.5rem; /* Equivalent to "mb-6" */
+  padding: 1rem; /* Equivalent to "p-4" */
+  background-color: #d1fae5; /* Equivalent to "bg-green-100" */
+  color: #065f46; /* Equivalent to "text-green-800" */
+  border-radius: 0.5rem; /* Equivalent to "rounded-lg" */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to "shadow-md" */
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   #Contact {
