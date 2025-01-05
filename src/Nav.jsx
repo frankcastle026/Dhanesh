@@ -62,6 +62,14 @@ function Nav() {
               </li>
             </ul>
             <div className="ms-auto d-flex align-items-center">
+            <a
+                href="mailto:ndhanesh026@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-btn me-2"
+              >
+                <i className="bi bi-envelope"></i>
+              </a>
               <a
                 href="https://www.linkedin.com/in/dhanesh-n-75ba50267/"
                 target="_blank"
@@ -90,6 +98,15 @@ function Nav() {
         <a href="#projects" onClick={() => setSidebarOpen(false)}>PROJECTS</a>
         <a href="#Contact" onClick={() => setSidebarOpen(false)}>CONTACT</a>
         <div className="social-buttons">
+        <a
+            href="mailto:ndhanesh026@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-btn"
+            onClick={() => setSidebarOpen(false)}
+          >
+            <i className="bi bi-envelope"></i>
+          </a>
           <a
             href="https://www.linkedin.com/in/dhanesh-n-75ba50267/"
             target="_blank"
