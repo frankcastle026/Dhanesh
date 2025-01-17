@@ -31,7 +31,7 @@ function Nav() {
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" href="#About">
+                <a className="nav-link active" href="#aboutme">
                   About
                 </a>
               </li>
